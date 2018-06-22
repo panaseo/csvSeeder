@@ -1,0 +1,31 @@
+{
+    "name": "panaseo/csvseeder",
+    "description": "This a CSV Seeder for Laravel",
+    "type": "laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pablo Espinoza",
+            "email": "pespinozar@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "panaseo\\csvSeeder\\" : "src/"
+        },
+
+        "files": ["src/helpers.php"]
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "panaseo\\csvSeeder\\csvSeederServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {}
+}
